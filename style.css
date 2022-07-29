@@ -1,0 +1,196 @@
+html{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(17,24,39);
+    color: white;
+    margin: 0% 3%;
+    font-family: 'Oswald', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h2{
+    color: #ccc;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav div section{
+    margin: 0 2rem;
+}
+nav div .shopBtn{
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    text-decoration: underline;
+}
+.item-count{
+    margin-right: 6px;
+}
+.checkoutBtn,
+.addToCartBtn{
+    background: #ccc;
+    padding: 0.7rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+.checkoutBtn:hover,
+.addToCartBtn:hover{
+    background: rgb(102, 101, 101);
+    color: #ccc;
+}
+
+.hero{
+    margin: 3% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero #showImg{
+    margin-right: 8%;
+}
+.hero div .price{
+    color: gold;
+}
+
+.moreWatches{
+    margin-bottom: 4%;
+}
+.moreWatches h2{
+    text-align: center;
+    color: #ccc;
+}
+.moreWatches .cardsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.previewCard{
+    width: 15%;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.previewCard:hover{
+    background: rgb(6, 10, 17);
+    border: 2px solid white;
+    transition: 0.5s;
+}
+.previewCard h3,
+.previewCard p{
+    margin: 0;
+}
+.previewCard h3{
+    text-decoration: underline;
+}
+.previewCard img{
+    margin-top: 1.5rem;
+}
+
+#checkoutPage{
+    width: 75%;
+    margin: auto;
+}
+#checkoutItemContainer{
+    height: 55vh;
+    overflow-y: scroll;
+    border: 2px solid #ccc;
+    padding: 0.4rem;
+}
+.checkoutItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ccc;
+    color: rgb(43, 43, 43);
+    padding: 0.6rem;
+    width: calc(100% - 1.2rem);
+    border-radius: 10px;
+    margin: 0 auto 8px auto;
+}
+.checkoutItem img{
+    height: 80px;
+    width: 50px;
+    padding: 0 15px;
+    background: rgb(17,24,39);
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.checkoutItem .quantity{
+    display: flex;
+    align-items: center;
+}
+.quantity .plusBtn,
+.quantity .minusBtn{
+    color: rgb(88, 87, 87);
+    cursor: pointer;
+}
+.quantity p{
+    margin: 0 0.8rem;
+}
+.checkoutItem .removeBtn{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.amountContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subTotal,
+.deliFee,
+.discount{
+    color: #ccc;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border: 1px solid #ccc;
+    padding: 0.4rem;
+}
+
+.shippingAndPromo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promo{
+    display: flex;
+}
+#promoCode{
+    outline: none;
+    width: 15rem;
+    padding: 0.8rem;
+    background: #ccc;
+    border: none;
+}
+.applyBtn{
+    width: 5rem;
+    background: goldenrod;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#shipping{
+    outline: none;
+    width: 10rem;
+    padding: 0.8rem;
+    background: #ccc;
+    border: none;
+    margin-left: 2rem;
+}

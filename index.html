@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h2>DENNIS MERTIN</h2>
+        <div>
+            <button class="shopBtn" onclick="backToShop()">Shop</button>
+            <section id="itemCounter">
+                <!-- <span class="item-count">3</span>
+                <ion-icon name="bag"></ion-icon> -->
+            </section>
+            <button class="checkoutBtn" onclick="goToCheckoutPage()">Go To Checkout</button>
+        </div>
+    </nav>
+    <hr>
+
+    <section id="shop">
+        <div class="hero">
+            <img id="showImg" src="./images/black-watch.png" alt="">
+            <div>
+                <h3 class="title">DM 9106</h3>
+                <p>- Stainless Steel</p>
+                <p>- 3 ATM Water Resistant</p>
+                <p>- Japan Quartz Movement</p>
+                <p>- 2 Years Battery Life</p>
+                <p class="price">$<span class="priceAmount">100</span></p>
+                <button class="addToCartBtn" onclick="createCheckoutItem()">ADD TO CART</button>
+            </div>
+        </div>
+        <hr>
+        <div class="moreWatches">
+            <h2>MORE WATCHES</h2>
+            <div class="cardsContainer">
+                <div class="previewCard" onclick="previewCardOnClick('./images/black-watch.png','DM 9106','100')">
+                    <h3>DM 9106</h3>
+                    <p>$<span>100</span></p>
+                    <img height="200px" src="./images/black-watch.png" alt="">
+                </div>
+                <div class="previewCard" onclick="previewCardOnClick('./images/blue-watch.png','DM 7405','110')">
+                    <h3>DM 7405</h3>
+                    <p>$<span>110</span></p>
+                    <img height="200px" src="./images/blue-watch.png" alt="">
+                </div>
+                <div class="previewCard" onclick="previewCardOnClick('./images/silver-watch.png','DM 9421','120')">
+                    <h3>DM 9421</h3>
+                    <p>$<span>120</span></p>
+                    <img height="200px" src="./images/silver-watch.png" alt="">
+                </div>
+                <div class="previewCard" onclick="previewCardOnClick('./images/gold-watch.png','DM 9999','130')">
+                    <h3>DM 9999</h3>
+                    <p>$<span>130</span></p>
+                    <img height="200px" src="./images/gold-watch.png" alt="">
+                </div>
+                <div class="previewCard" onclick="previewCardOnClick('./images/silver2-watch.png','DM 7505','110')">
+                    <h3>DM 7505</h3>
+                    <p>$<span>110</span></p>
+                    <img height="200px" src="./images/silver2-watch.png" alt="">
+                </div>
+                <div class="previewCard" onclick="previewCardOnClick('./images/copper-watch.png','DM 9989','100')">
+                    <h3>DM 9989</h3>
+                    <p>$<span>100</span></p>
+                    <img height="200px" src="./images/copper-watch.png" alt="">
+                </div>
+                <div class="previewCard" onclick="previewCardOnClick('./images/blue2-watch.png','DM 7300','130')">
+                    <h3>DM 7300</h3>
+                    <p>$<span>130</span></p>
+                    <img height="200px" src="./images/blue2-watch.png" alt="">
+                </div>
+                <div class="previewCard" onclick="previewCardOnClick('./images/silver3-watch.png','DM 9976','120')">
+                    <h3>DM 9976</h3>
+                    <p>$<span>120</span></p>
+                    <img height="200px" src="./images/silver3-watch.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="checkoutPage">
+        <div id="checkoutItemContainer">
+
+        </div>
+        <div class="amountContainer">
+            <!-- <p class="discount">Discount : $<span>50</span></p>
+            <p class="deliFee">Delivery : $<span>50</span></p>
+            <p class="subTotal">Subtotal : $<span>330</span></p> -->
+        </div>
+        <div class="shippingAndPromo">
+            <!-- <div class="promo">
+                <input class="promoCode" type="text" placeholder="Please Enter Promo Code">
+                <input class="applyBtn" type="button" value="Apply">
+            </div>
+            <select name="shipping" id="shipping">
+                <option value="yangon">Yangon-$3</option>
+                <option value="mandalay">Mandalay-$5</option>
+            </select> -->
+        </div>
+    </section>
+
+    <script async src="./index.js"></script>
+</body>
+</html>
